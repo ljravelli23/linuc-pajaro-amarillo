@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LinUC Pájaro Amarillo — Cronograma" company="UCAB · Sistemas Operativos (NRC 15784)" webLink="https://github.com/ljravelli23/linuc-pajaro-amarillo" view-date="2026-11-02" view-index="0" gantt-divider-location="420" resource-divider-location="300" version="3.2.3247" locale="es">
+    <description><![CDATA[Cronograma del anteproyecto del simulador de planificación de CPU LinUC Pájaro Amarillo.]]></description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="300" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="90" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="90" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="320" order="0"/>
+        <field id="1" name="Función por defecto" width="120" order="1"/>
+    </view>
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="F0 Planificación y anteproyecto" color="#7F8C9D" meeting="false" start="2026-11-02" duration="7" complete="100" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <task id="1" name="Consultas, arranque y decisiones" color="#7F8C9D" meeting="false" start="2026-11-02" duration="7" complete="100" expand="true"/>
+            <task id="2" name="Hito: H0" color="#C0392B" meeting="true" start="2026-11-08" duration="0" complete="100" expand="true"/>
+        </task>
+        <task id="3" name="F1 Fundamentos (Días 1–2)" color="#2E6DB4" meeting="false" start="2026-11-09" duration="7" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <task id="4" name="Instalación del entorno (individual)" color="#2E6DB4" meeting="false" start="2026-11-09" duration="5" complete="0" expand="true"/>
+            <task id="5" name="Resultados esperados y CSV (paralela)" color="#2E6DB4" meeting="false" start="2026-11-09" duration="7" complete="0" expand="true"/>
+            <task id="6" name="Días 1–2: estructuras base y FCFS" color="#2E6DB4" meeting="false" start="2026-11-14" duration="2" complete="0" expand="true"/>
+            <task id="7" name="Colchón F1" color="#B0B5BB" meeting="false" start="2026-11-16" duration="2" complete="0" expand="true"/>
+            <task id="8" name="Hito: H1" color="#C0392B" meeting="true" start="2026-11-15" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="9" name="F2 Algoritmos principales (Días 3–4)" color="#16A085" meeting="false" start="2026-11-16" duration="7" complete="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <task id="10" name="Ventana principal en Qt (paralela)" color="#16A085" meeting="false" start="2026-11-16" duration="3" complete="0" expand="true"/>
+            <task id="11" name="Días 3–4: SJF y Round Robin" color="#16A085" meeting="false" start="2026-11-21" duration="2" complete="0" expand="true"/>
+            <task id="12" name="Colchón F2" color="#B0B5BB" meeting="false" start="2026-11-23" duration="3" complete="0" expand="true"/>
+            <task id="13" name="Hito: H2" color="#C0392B" meeting="true" start="2026-11-22" duration="0" complete="0" expand="true"/>
+            <task id="14" name="Hito: Avance" color="#C0392B" meeting="true" start="2026-11-26" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="15" name="F3 Algoritmos y métricas (Días 5–6)" color="#2E9E4F" meeting="false" start="2026-11-23" duration="7" complete="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <task id="16" name="Días 5–6: Prioridades, SRTF y métricas" color="#2E9E4F" meeting="false" start="2026-11-28" duration="2" complete="0" expand="true"/>
+            <task id="17" name="Colchón F3" color="#B0B5BB" meeting="false" start="2026-11-30" duration="2" complete="0" expand="true"/>
+            <task id="18" name="Hito: H3" color="#C0392B" meeting="true" start="2026-11-29" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="19" name="F4 Interfaz y pruebas (Días 7–8)" color="#D9822B" meeting="false" start="2026-11-30" duration="7" complete="0" expand="true">
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+            <task id="20" name="Conexión interfaz–motor" color="#D9822B" meeting="false" start="2026-11-30" duration="2" complete="0" expand="true"/>
+            <task id="21" name="Días 7–8: visualización y pruebas" color="#D9822B" meeting="false" start="2026-12-05" duration="2" complete="0" expand="true"/>
+            <task id="22" name="Colchón F4" color="#B0B5BB" meeting="false" start="2026-12-07" duration="2" complete="0" expand="true"/>
+            <task id="23" name="Hito: H4" color="#C0392B" meeting="true" start="2026-12-06" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="24" name="F5 Finalización (Días 9–10)" color="#8E44AD" meeting="false" start="2026-12-07" duration="7" complete="0" expand="true">
+            <task id="25" name="Capturas para el manual (paralela)" color="#8E44AD" meeting="false" start="2026-12-07" duration="3" complete="0" expand="true"/>
+            <task id="26" name="Días 9–10: manual, entrega y ensayo" color="#8E44AD" meeting="false" start="2026-12-12" duration="2" complete="0" expand="true"/>
+            <task id="27" name="Colchón de la presentación" color="#B0B5BB" meeting="false" start="2026-12-14" duration="3" complete="0" expand="true"/>
+            <task id="28" name="Hito: Entrega" color="#C0392B" meeting="true" start="2026-12-12" duration="0" complete="0" expand="true"/>
+            <task id="29" name="Hito: Presentación" color="#C0392B" meeting="true" start="2026-12-17" duration="0" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Luigi Ravelli (Director de Orquesta del CPU)" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Alfredo Gruber (Concertino de Interfaz y Métricas)" function="Default:1" contacts="" phone=""/>
+        <resource id="2" name="Guillermo Salas (Afinador de Algoritmos)" function="Default:1" contacts="" phone=""/>
+        <resource id="3" name="Miguel Delgado (Guardián de la Partitura)" function="Default:1" contacts="" phone=""/>
+        <resource id="4" name="Andrés Rosas (Crítico de Ensayos)" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
